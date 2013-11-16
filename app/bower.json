@@ -1,0 +1,15 @@
+{
+  "name": "onwithme",
+  "version": "0.0.0",
+  "homepage": "https://github.com/evanlh/onwithme",
+  "description": "Experiences Together Online",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
