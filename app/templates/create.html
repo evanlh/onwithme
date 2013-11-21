@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Create - Onwith.me {% endblock %}
+{% block content %}
+<div class="row-fluid">
+  <h1></h1>
+
+  <form role="form">
+    <fieldset>
+      <legend>Create an Experience</legend>
+
+      <div class="form-group">
+        <input type="text" class="form-control input-xxlarge" id="videoLink" placeholder="Paste link or search YouTube">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control input-xxlarge" id="videoTitle" placeholder="Title">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control input-xxlarge" id="scheduledDate" placeholder="When?">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary btn-large createExperience">Create...</button>
+      </div>
+    </fieldset>
+  </form>
+
+</div>
+
+{% endblock %}
