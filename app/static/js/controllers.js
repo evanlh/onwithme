@@ -30,15 +30,11 @@ onwithmeApp.controller('HomeCtrl', function($scope){
 });
 
 function onYouTubePlayerReady(playerId) {
-    console.log('youtube ready');
     var ytp = document.getElementById(playerId);
-    console.log(ytp);
     ytp.playVideo();
-    console.log('it should be playing...');
 }
 
 onwithmeApp.controller('ViewCtrl', function($scope){
-    console.log('controller hit');
     var params = { allowScriptAccess: "always" };
     var atts = { id: "ytplayer" };
     var video_id = "T2vw6CyCTjU";

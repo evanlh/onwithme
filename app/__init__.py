@@ -1,5 +1,5 @@
-from flask import Flask, session, g, render_template
-
+from flask import Flask, session, g, render_template, request, jsonify
+from youtube import youtube_search
 
 # Create the Flask application and the Flask-SQLAlchemy object.
 app = Flask(__name__)
@@ -17,5 +17,13 @@ def create():
 @app.route('/view')
 def view():
     return render_template('view.html')
+
+@app.route('/youtube')
+def youtube():
+    if request.args.get('q', ''):
+        # todo cleanse this?
+        videos = youtube_search({'q': request.args.get('q', ''), 'maxResults': 25})
+        return jsonify({'results': videos })
+    return jsonify({'results': []})
 
 import models
