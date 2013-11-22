@@ -78,9 +78,6 @@
 
       {% block content %}{% endblock %}
 
-      <div class="footer">
-        <p><a href="#">About</a> | <a href="#">Contact</a> | &copy; onwith.me 2013</p>
-      </div>
 
     </div> <!-- /container -->
 
@@ -90,5 +87,6 @@
     <script src="static/bower_components/angular/angular.min.js"></script>
     <script src="static/js/ui-bootstrap-tpls-0.6.0.min.js"></script>
     <script src="static/js/controllers.js"></script>
+    {% block extrajs %}{% endblock %}
   </body>
 </html>

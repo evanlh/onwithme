@@ -14,4 +14,8 @@ def index():
 def create():
     return render_template('create.html')
 
+@app.route('/view')
+def view():
+    return render_template('view.html')
+
 import models
